@@ -22,7 +22,7 @@
 	position: relative;
 	right: 20px;
 	top: 10px;
-	margin-left: 100px;
+	margin-left: 140px;
 	margin-right: 15px;
 }
 
@@ -100,7 +100,7 @@
 @media only screen and (min-width: 1440px) {
 	.collapse {
 		position: relative;
-		left: 325px;
+		left: 205px;
 	}
 
 	.image {
@@ -158,7 +158,7 @@
 		position: relative;
 		right: 20px;
 		top: 10px;
-		margin-left: 350px;
+		margin-left: 200px;
 		margin-right: 15px;
 	}
 
@@ -238,7 +238,7 @@
 	.navButton {
 		position: relative;
 		bottom: 20px;
-		left: 165px;
+		left: 115px;
 	}
 
 	.navLink {
@@ -259,7 +259,7 @@
 	.searchLogo1 {
 		display: inline;
 		position: relative;
-		left: 130px;
+		left: 80px;
 		top: 15px;
 	}
 
