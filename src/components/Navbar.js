@@ -1,30 +1,37 @@
 import { Link, withRouter } from 'react-router-dom';
-import navStyles from '../styles/Navbar.module.css';
+import headerStyles from '../styles/Navbar.module.css';
 import navlogo from '../assets/images/hngLogo.png';
+import searchlogo from '../assets/images/search.png';
 
 const Navbar = () => {
 	return (
-		<nav className={`${navStyles.navbar} navbar-expand-lg navbar-light`}>
+		<nav className={`${headerStyles.navbar} navbar-expand-lg navbar-light`}>
 			<div className='container-fluid'>
-				<Link to='/' className={`${navStyles.navbarBrand}`}>
+				<Link to='/' className={`${headerStyles.navbarBrand}`}>
 					<img
 						src={navlogo}
 						alt='zuri-logo'
 						width='20'
 						height='20'
-						className={`d-inline-block align-text-top ${navStyles.image}`}
+						className={`d-inline-block align-text-top ${headerStyles.image}`}
 					/>
-					<span className={`${navStyles.zuriChat}`}>Zuri Chat</span>
+					<span className={`${headerStyles.zuriChat}`}>
+						Zuri Chat
+					</span>
 				</Link>
 
-				<div className='nav-item search'>
-					<span className={`${navStyles.searchLogo1}`}>
-						<i className='fas fa-search'></i>
-					</span>
+				<div className={`nav-item ${headerStyles.searchLogo1}`}>
+					<img
+						src={searchlogo}
+						alt='zuri-logo'
+						width='20'
+						height='20'
+						className={`d-inline-block align-text-top ${headerStyles.searchLogo1}`}
+					/>
 				</div>
 
 				<button
-					className={`navbar-toggler ${navStyles.navButton}`}
+					className={`navbar-toggler ${headerStyles.navButton}`}
 					type='button'
 					data-bs-toggle='collapse'
 					data-bs-target='#navbarNavDropdown'
@@ -34,15 +41,15 @@ const Navbar = () => {
 					<span className='navbar-toggler-icon'></span>
 				</button>
 				<div
-					className={`${navStyles.collapse} navbar-collapse`}
+					className={`${headerStyles.collapse} navbar-collapse`}
 					id='navbarNavDropdown'>
-					<ul className={`navbar-nav ${navStyles.navbarNav}`}>
+					<ul className={`navbar-nav ${headerStyles.navbarNav}`}>
 						<li className='nav-item'>
 							<Link
 								to='/features'
-								className={`nav-link active ${navStyles.navLinkFeatures}`}
+								className={`nav-link active ${headerStyles.navLinkFeatures}`}
 								aria-current='page'>
-								<span className={`${navStyles.features}`}>
+								<span className={`${headerStyles.features}`}>
 									Features
 								</span>
 							</Link>
@@ -50,11 +57,11 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								to='/pricing'
-								className={`nav-link dropdown-toggle ${navStyles.navLinkPricing}`}
+								className={`nav-link dropdown-toggle ${headerStyles.navLinkPricing}`}
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								<span className={`${navStyles.pricing}`}>
+								<span className={`${headerStyles.pricing}`}>
 									Pricing
 								</span>
 							</Link>
@@ -62,8 +69,8 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								to='/community'
-								className={`nav-link ${navStyles.navLinkComms}`}>
-								<span className={`${navStyles.comms}`}>
+								className={`nav-link ${headerStyles.navLinkComms}`}>
+								<span className={`${headerStyles.comms}`}>
 									Community
 								</span>
 							</Link>
@@ -71,25 +78,29 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								to='/downloads'
-								className={`nav-link dropdown-toggle ${navStyles.navLinkDownloads}`}
+								className={`nav-link dropdown-toggle ${headerStyles.navLinkDownloads}`}
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								<span className={`${navStyles.download}`}>
+								<span className={`${headerStyles.download}`}>
 									Downloads
 								</span>
 							</Link>
 						</li>
-						<li className='nav-item'>
-							<span className={`${navStyles.searchLogo}`}>
-								<i className='fas fa-search'></i>
-							</span>
+						<li className={`nav-item ${headerStyles.searchLogo}`}>
+							<img
+								src={searchlogo}
+								alt='search-logo'
+								width='20'
+								height='20'
+								className={`d-inline-block align-text-top ${headerStyles.searchLogo}`}
+							/>
 						</li>
 						<li className='nav-item'>
 							<Link
 								to='/signup'
-								className={`nav-link ${navStyles.navLinkSignUp}`}>
-								<span className={`${navStyles.signU}`}>
+								className={`nav-link ${headerStyles.navLinkSignUp}`}>
+								<span className={`${headerStyles.signU}`}>
 									Sign Up
 								</span>
 							</Link>
@@ -97,9 +108,9 @@ const Navbar = () => {
 						<li className='nav-item'>
 							<Link
 								to='/signin'
-								className={`btn ${navStyles.signIn}`}
+								className={`btn ${headerStyles.signIn}`}
 								role='button'>
-								<span className={`${navStyles.signI}`}>
+								<span className={`${headerStyles.signI}`}>
 									Sign In
 								</span>
 							</Link>
