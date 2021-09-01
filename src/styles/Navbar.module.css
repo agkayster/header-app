@@ -10,8 +10,7 @@
 }
 
 .navbarNav {
-	position: relative;
-	left: 240px;
+	margin-left: 240px;
 }
 
 .searchLogo1 {
@@ -22,7 +21,7 @@
 	position: relative;
 	right: 20px;
 	top: 5px;
-	margin-left: 80px;
+	margin-left: 150px;
 	margin-right: -10px;
 }
 
@@ -54,7 +53,7 @@
 
 .image {
 	position: relative;
-	top: 5px;
+	top: 10px;
 }
 
 .navbarBrand {
@@ -99,13 +98,12 @@
 
 @media only screen and (min-width: 1440px) {
 	.collapse {
-		position: relative;
-		left: 205px;
+		margin-left: 200px;
 	}
 
 	.image {
 		position: relative;
-		bottom: 10px;
+		top: 10px;
 	}
 
 	.zuriChat {
@@ -118,20 +116,17 @@
 		text-decoration: none;
 	}
 
-	/* .svg-inline--fa {
-      position: relative;
-      left: 25px;
-      bottom: 10px;
-    } */
-
 	.navbar {
-		padding-left: 20px;
 		margin-top: 15px;
 	}
 
 	.navbarNav {
-		position: relative;
-		left: 120px;
+		margin-left: 140px;
+	}
+
+	.navbarBrand {
+		text-decoration: none;
+		padding-left: 20px;
 	}
 
 	.navButton {
@@ -160,6 +155,10 @@
 		top: 5px;
 		margin-left: 200px;
 		margin-right: 15px;
+	}
+
+	.searchLogo1 {
+		display: none;
 	}
 
 	.signIn {
@@ -202,11 +201,12 @@
 	.collapse {
 		position: relative;
 		right: 120px;
+		padding: auto;
 	}
 
 	.image {
 		position: relative;
-		bottom: 10px;
+		top: 10px;
 	}
 
 	.zuriChat {
@@ -219,26 +219,19 @@
 		text-decoration: none;
 	}
 
-	/* .svg-inline--fa {
-		position: relative;
-		left: 25px;
-		bottom: 10px;
-	} */
-
 	.navbar {
 		padding-left: 20px;
 		margin-top: 15px;
 	}
 
 	.navbarNav {
-		position: relative;
-		left: 120px;
+		margin-left: 140px;
 	}
 
 	.navButton {
 		position: relative;
 		top: 10px;
-		left: 185px;
+		right: 5px;
 	}
 
 	.navLink {
@@ -247,9 +240,7 @@
 
 	.navbarBrand {
 		text-decoration: none;
-		float: left;
-		position: relative;
-		top: 5px;
+		padding-left: 20px;
 	}
 
 	.searchLogo {
@@ -259,7 +250,7 @@
 	.searchLogo1 {
 		display: inline;
 		position: relative;
-		left: 80px;
+		left: 50px;
 		top: 5px;
 	}
 
@@ -267,6 +258,7 @@
 		background-color: #00b87c;
 		color: white;
 		border-radius: 0px;
+		font-weight: 300;
 	}
 
 	.signI {
@@ -297,4 +289,17 @@
 		color: black;
 		font-weight: 300;
 	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background: #f9f9f9;
 }
