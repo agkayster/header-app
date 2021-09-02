@@ -107,3 +107,33 @@
 };
 
 export default withRouter(Navbar);
+
+<Link to="/" className={`${headerStyles.navbarBrand}`}>
+          <img
+            src="/zurichatlogo.svg"
+            alt="zuri-logo"
+            width="20"
+            height="20"
+            className={`d-inline-block align-text-top ${headerStyles.image}`}
+  />
+  
+
+  <div className={`nav-item ${headerStyles.searchLogo1}`}>
+          <img
+            src="/search-2-line.svg"
+            alt="zuri-logo"
+            width="20"
+            height="20"
+            className={`d-inline-block align-text-top ${headerStyles.searchLogo1}`}
+          />
+  </div>
+  
+  <li className={`nav-item ${headerStyles.searchLogo}`}>
+              <img
+                src="/search-2-line.svg"
+                alt="search-logo"
+                width="20"
+                height="20"
+                className={`d-inline-block align-text-top ${headerStyles.searchLogo}`}
+              />
+            </li>
